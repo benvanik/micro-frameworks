@@ -5,6 +5,7 @@
 
 Feeds is a lightweight RSS/Atom feed reading library that compiles as a framework for OS X and a static library for the iPhone/iPod Touch. It currently supports some common subset of information between RSS and Atom, and is designed to be read-only.
 
+Status: *in progress*
   * Source: [http://code.google.com/p/micro-frameworks/source/browse/#svn/Feeds/trunk/Feeds Feeds/]
   * Documentation: TODO
   * Binaries: TODO
