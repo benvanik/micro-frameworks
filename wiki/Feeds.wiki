@@ -1,0 +1,30 @@
+#summary Overview of the Feeds framework.
+#labels Featured,Feeds
+
+= Feeds =
+
+Feeds is a lightweight RSS/Atom feed reading library that compiles as a framework for OS X and a static library for the iPhone/iPod Touch. It currently supports some common subset of information between RSS and Atom, and is designed to be read-only.
+
+  * Source: [http://code.google.com/p/micro-frameworks/source/browse/#svn/Feeds/trunk/Feeds Feeds/]
+  * Documentation: TODO
+  * Binaries: TODO
+
+== Features ==
+  * Fully compatible with the iPhone SDK
+  * Pure Objective C
+  * No external dependencies
+  * Trivial to consume
+  * Serialization/deserialization of feeds to/from plist
+  * Simple merge management (allowing for caching/incremental updates)
+  * Simple update engine and local storage
+
+== Limitations ==
+The goal of the framework is to remain small, easy to use, and general, and as such it does not contain a lot of fluff features. Below are some of the things that I left out, but may add in the future.
+  * No write support - don't care about publishing (yet)
+  * Partial support for feed entities - I only need some of them, and wanted to be consistent
+  * No hierarchical data structure (nested categories, etc) - that's for the UI to do
+
+== TODO ==
+  * Unit tests (also test for memory leaks)
+  * Sorting of categories/entries
+  * Better memory behavior (less autorelease so less pool clutter)
