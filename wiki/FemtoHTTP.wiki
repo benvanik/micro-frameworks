@@ -39,7 +39,6 @@ The goal of the framework is to remain small, easy to use, and general, and as s
   * Feature list, in decreasing order of importance:
    # 'Keep-Alive: timeout=N, max=M' support
    # Content-Encoding: gzip / Accept-Encoding: gzip
-   # 100 Continue support for request bodies
    # Partial content (Content-Range/Range/206)
    # Automatic redirect following
    # Proxy authentication
