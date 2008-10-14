@@ -18,6 +18,7 @@ Status: *in progress*
   * Full HTTP/1.1 support (keep-alive, chunked encoding, etc)
   * Connection pooling
   * Cookies
+  * HTTP compression (gzip/deflate)
 
 == Limitations ==
 The goal of the framework is to remain small, easy to use, and general, and as such it does not contain a lot of fluff features. Below are some of the things that I left out, but may add in the future.
@@ -25,6 +26,12 @@ The goal of the framework is to remain small, easy to use, and general, and as s
   * No HTTP authentication - don't care
 
 == TODO ==
+  * Feature list, in decreasing order of importance:
+   # 'Keep-Alive: timeout=N, max=M' support
+   # Partial content (Content-Range/Range/206)
+   # Automatic redirect following
+   # Proxy authentication
+   # Pipelining mode (batch requests/responses)
   * Unit tests (also test for memory leaks)
    * Different servers
    * Pooling
@@ -35,11 +42,5 @@ The goal of the framework is to remain small, easy to use, and general, and as s
    * Cookies
    * Socket stuff
    * Redirects
+   * Compression
   * Better memory behavior (less autorelease so less pool clutter)
-  * Feature list, in decreasing order of importance:
-   # 'Keep-Alive: timeout=N, max=M' support
-   # Content-Encoding: gzip / Accept-Encoding: gzip
-   # Partial content (Content-Range/Range/206)
-   # Automatic redirect following
-   # Proxy authentication
-   # Pipelining mode (batch requests/responses)
